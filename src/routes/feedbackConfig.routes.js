@@ -5,8 +5,9 @@ import {
 } from "../controllers/feedbackConfig.controller.js";
 import { protect } from "../middleware/auth.middleware.js";
 
-const router = express.Router();
+const router = express.Router({ mergeParams: true });
 
+// Routes: /api/feedback-config/:businessId
 router.get("/", getFeedbackConfig);
 router.put("/", protect, updateFeedbackConfig);
 
