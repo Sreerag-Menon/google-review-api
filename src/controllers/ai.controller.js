@@ -90,6 +90,7 @@ WRITING INSTRUCTIONS:
 - Length: ${length}
 ${spotlight ? `- If it fits naturally, highlight "${spotlight}" as a standout.` : ""}
 - Write in first person ("I" / "we").
+- IMPORTANT: Base the core narrative of the review heavily on the "PERSONAL COMMENT" if one is provided.
 - IMPORTANT: Do NOT invent any specific food items, product names, staff names, prices, or any details not mentioned above.
 - Do NOT use AI-sounding phrases like "testament to", "delve", "elevate", "nestled", or "impeccable".
 - Output ONLY the review text — no headings, no quotes, no explanation.
