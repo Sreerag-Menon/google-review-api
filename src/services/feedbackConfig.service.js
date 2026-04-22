@@ -13,6 +13,13 @@ const DEFAULT_CONFIGS = {
       { id: "spice", title: "Spice Level", options: [{ label: "Mild", emoji: "🌶️" }, { label: "Moderate", emoji: "🌶️🌶️" }, { label: "Intense", emoji: "🔥" }] },
       { id: "hygiene", title: "Hygiene", options: [{ label: "Pristine", emoji: "✅" }, { label: "Substandard", emoji: "❌" }] },
     ],
+    questions: [
+      { id: "q_food", type: "star_rating", title: "Food Quality", icon: "🍽️", required: true, usedInRouting: true, options: [] },
+      { id: "q_service", type: "star_rating", title: "Service", icon: "👨‍🍳", required: true, usedInRouting: true, options: [] },
+      { id: "q_ambience", type: "star_rating", title: "Ambience", icon: "🪑", required: false, usedInRouting: false, options: [] },
+      { id: "q_taste", type: "multiple_choice", title: "How was the taste?", icon: "", required: false, usedInRouting: false, options: [{ id: "o1", label: "Excellent", emoji: "😍" }, { id: "o2", label: "Acceptable", emoji: "😐" }, { id: "o3", label: "Disappointing", emoji: "😞" }] },
+      { id: "q_comment", type: "long_text", title: "Any other thoughts?", icon: "", required: false, usedInRouting: false, options: [] },
+    ],
   },
   salon: {
     ratingCategories: [
@@ -24,6 +31,13 @@ const DEFAULT_CONFIGS = {
       { id: "skill", title: "Skill", options: [{ label: "Expert", emoji: "🌟" }, { label: "Average", emoji: "😐" }, { label: "Needs improvement", emoji: "😕" }] },
       { id: "wait", title: "Wait Time", options: [{ label: "No wait", emoji: "⚡" }, { label: "Reasonable", emoji: "🕐" }, { label: "Too long", emoji: "😤" }] },
     ],
+    questions: [
+      { id: "q_staff", type: "star_rating", title: "Staff", icon: "💇", required: true, usedInRouting: true, options: [] },
+      { id: "q_hygiene", type: "star_rating", title: "Hygiene", icon: "🧼", required: true, usedInRouting: true, options: [] },
+      { id: "q_experience", type: "star_rating", title: "Overall Experience", icon: "✨", required: false, usedInRouting: false, options: [] },
+      { id: "q_skill", type: "multiple_choice", title: "Stylist skill level?", icon: "", required: false, usedInRouting: false, options: [{ id: "o1", label: "Expert", emoji: "🌟" }, { id: "o2", label: "Average", emoji: "😐" }, { id: "o3", label: "Needs improvement", emoji: "😕" }] },
+      { id: "q_comment", type: "long_text", title: "Any other thoughts?", icon: "", required: false, usedInRouting: false, options: [] },
+    ],
   },
   gym: {
     ratingCategories: [
@@ -34,6 +48,13 @@ const DEFAULT_CONFIGS = {
     tagGroups: [
       { id: "condition", title: "Equipment Condition", options: [{ label: "Well maintained", emoji: "✅" }, { label: "Needs repair", emoji: "🔧" }] },
       { id: "crowd", title: "Crowding", options: [{ label: "Spacious", emoji: "😊" }, { label: "Moderate", emoji: "😐" }, { label: "Too crowded", emoji: "😤" }] },
+    ],
+    questions: [
+      { id: "q_equipment", type: "star_rating", title: "Equipment", icon: "🏋️", required: true, usedInRouting: true, options: [] },
+      { id: "q_staff", type: "star_rating", title: "Staff", icon: "💪", required: true, usedInRouting: true, options: [] },
+      { id: "q_facility", type: "star_rating", title: "Facility", icon: "🏟️", required: false, usedInRouting: false, options: [] },
+      { id: "q_crowd", type: "multiple_choice", title: "How crowded was it?", icon: "", required: false, usedInRouting: false, options: [{ id: "o1", label: "Spacious", emoji: "😊" }, { id: "o2", label: "Moderate", emoji: "😐" }, { id: "o3", label: "Too crowded", emoji: "😤" }] },
+      { id: "q_comment", type: "long_text", title: "Any other thoughts?", icon: "", required: false, usedInRouting: false, options: [] },
     ],
   },
 };
