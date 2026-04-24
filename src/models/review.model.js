@@ -41,6 +41,9 @@ const reviewSchema = new mongoose.Schema(
 
     // Pre-computed routing average (always stored, drives dashboard stats)
     overallRating: { type: Number, default: 0 },
+
+    // Private note from negative-experience modal (only shown to business owner)
+    privateNote: { type: String, default: "" },
   },
   { timestamps: true }
 );

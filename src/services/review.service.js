@@ -14,6 +14,8 @@ export const reviewService = {
       categoryRatings = [],
       tags = [],
       comment = "",
+      // Private note from negative-experience modal
+      privateNote = "",
     } = body;
 
     let overallRating = 0;
@@ -59,6 +61,7 @@ export const reviewService = {
       tags,
       comment,
       overallRating,
+      privateNote,
     });
   },
 };
